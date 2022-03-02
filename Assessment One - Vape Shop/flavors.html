@@ -1,0 +1,374 @@
+<html>
+
+<!-- navigation -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        transition: background-color .5s;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="homepage.html">Home</a>
+        <a href="vapes.html">Vapes</a>
+        <a href="flavors.html">Flavors</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    <!-- liquids shop -->
+
+    <head>
+        <script type="text/javascript">
+            function greet() {
+                alert("Sorry, We arent taking orders currently due to covid!");
+            };
+        </script>
+    </head>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Vape Shop</title>
+        <center>
+            <a href='https://www.linkpicture.com/view.php?img=LPic621580de9b3bb576902177'><img src='https://www.linkpicture.com/q/logo-removebg-preview_4.png' type='image'></a>
+        </center>
+    </head>
+
+    <h2 style="text-align:center">Liquids</h2>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .column {
+            float: left;
+            width: 33%;
+            padding: 0 10px;
+        }
+        
+        .row {
+            margin: 0 -5px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+    </style>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-liquid.jpg" alt="Heart Beet" style="width:25%">
+                <h1>Heart Beet 3% Liquid</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-liquid.jpg" alt="Pogofruit" style="width:25%">
+                <h1>Pogofruit 3% Liquid</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-liquid.jpg" alt="Hen Hen" style="width:25%">
+                <h1>Hen Hen 3% Liquid</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-liquid.jpg" alt="Oca Oca" style="width:25%">
+                <h1>Oca Oca 3% Liquid</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-liquid.jpg" alt="Cuberry" style="width:25%">
+                <h1>Cuberry 3% Liquid</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-liquid.jpg" alt="Stony Hen" style="width:25%">
+                <h1>Stony Hen 3% Liquid</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .block {
+                display: block;
+                width: 100%;
+                border: none;
+                background-color: #d9d9d9;
+                color: black;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                text-align: center;
+            }
+            
+            .block:hover {
+                background-color: #808080d;
+                color: black;
+            }
+        </style>
+
+        <button type="button" class="block"></button>
+        <p>&nbsp;</p>
+
+        <!-- pod shop -->
+
+        <h2 style="text-align:center">Pods</h2>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .column {
+                float: left;
+                width: 33%;
+                padding: 0 10px;
+            }
+            
+            .row {
+                margin: 0 -5px;
+            }
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+            
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 16px;
+                text-align: center;
+                background-color: #f1f1f1;
+            }
+        </style>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-pod.jpeg" alt="Odd Onion" style="width:25%">
+                <h1>Odd Onion 3% Pod</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-pod.jpeg" alt="Phase Lemon" style="width:25%">
+                <h1>Phase Lemon 3% Pod</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-pod.jpeg" alt="Painted Hen" style="width:25%">
+                <h1>Painted Hen 3% Pod</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-pod.jpeg" alt="Gilded Ginger" style="width:25%">
+                <h1>Gilded Ginger 3% Pod</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-pod.jpeg" alt="Kookadoba" style="width:25%">
+                <h1>Kookadoba 3% Pod</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://www.linkpicture.com/q/vape-pod.jpeg" alt="Roostro" style="width:25%">
+                <h1>Roostro 3% Pod</h1>
+                <p class="price">$19.99</p>
+                <p>mm yes nicotine</p>
+                <p><button onclick="greet()">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .block {
+                display: block;
+                width: 100%;
+                border: none;
+                background-color: #d9d9d9;
+                color: black;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                text-align: center;
+            }
+            
+            .block:hover {
+                background-color: #808080d;
+                color: black;
+            }
+        </style>
+
+        <button type="button" class="block"></button>
+        <p>&nbsp;</p>
+
+        <style>
+            body {
+                background-image: url('https://www.netpremacy.com/wp-content/uploads/2018/09/Background-website-01.jpg');
+            }
+        </style>
+
+</html>
